@@ -51,6 +51,6 @@ images/          SVG illustrations
 
 ## Author
 
-Shreya, first-year B.Tech CSE at SRM University, Ramapuram. Built with Claude as a pair programmer.
+Shreya, first-year B.Tech CSE at SRM University, Ramapuram. 
 
 [GitHub](https://github.com/shreya-anandhun) · [LinkedIn](https://www.linkedin.com/in/shreya-as-091b33437/)
