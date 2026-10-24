@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 800" font-family="'Google Sans Flex','Google Sans',Roboto,system-ui,sans-serif">
+  <!-- Original illustration: the 1947 logbook page with the first "bug" -->
+  <rect width="640" height="800" fill="#f4f4f4"/>
+
+  <!-- logbook page, slightly tilted -->
+  <g transform="rotate(-3 320 400)">
+    <rect x="90" y="90" width="460" height="620" rx="22" fill="#fff" stroke="#000" stroke-width="4"/>
+    <!-- ruled lines -->
+    <g stroke="#000" stroke-opacity=".15" stroke-width="2">
+      <path d="M120 170H520M120 220H520M120 270H520M120 320H520M120 370H520M120 420H520M120 470H520M120 520H520M120 570H520M120 620H520M120 670H520"/>
+    </g>
+    <!-- red margin line -->
+    <path d="M150 100V700" stroke="#7c0a02" stroke-width="3"/>
+
+    <!-- handwritten-feel entries -->
+    <g font-size="22" fill="#000" fill-opacity=".8">
+      <text x="170" y="160">9 Sept 1947</text>
+      <text x="170" y="210">15:45  Relay #70 Panel F</text>
+      <text x="170" y="260">(moth) in relay.</text>
+    </g>
+
+    <!-- tape holding the moth -->
+    <rect x="300" y="300" width="150" height="40" rx="6" fill="#ffe9a8" fill-opacity=".9" transform="rotate(12 375 320)"/>
+
+    <!-- the moth -->
+    <g transform="translate(375 345)">
+      <ellipse cx="0" cy="0" rx="10" ry="34" fill="#000"/>
+      <path d="M-6 -14 C -60 -60, -110 -30, -78 10 C -60 30, -30 20, -6 6z" fill="#000" fill-opacity=".85"/>
+      <path d="M6 -14 C 60 -60, 110 -30, 78 10 C 60 30, 30 20, 6 6z" fill="#000" fill-opacity=".85"/>
+      <path d="M-6 8 C -46 24, -62 56, -34 48 C -20 44, -10 30, -4 18z" fill="#000" fill-opacity=".7"/>
+      <path d="M6 8 C 46 24, 62 56, 34 48 C 20 44, 10 30, 4 18z" fill="#000" fill-opacity=".7"/>
+      <path d="M-4 -30 C -14 -46, -24 -52, -30 -58M4 -30 C 14 -46, 24 -52, 30 -58" stroke="#000" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+    </g>
+
+    <g font-size="22" fill="#000" fill-opacity=".8">
+      <text x="170" y="460">First actual case</text>
+      <text x="170" y="510">of bug being found.</text>
+    </g>
+
+    <!-- red circle around the moment -->
+    <ellipse cx="300" cy="470" rx="170" ry="60" fill="none" stroke="#7c0a02" stroke-width="4" stroke-dasharray="3 9" stroke-linecap="round"/>
+  </g>
+
+  <!-- naval anchor, bottom right -->
+  <g transform="translate(560 710)" fill="none" stroke="#7c0a02" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="0" cy="-34" r="8"/>
+    <path d="M0 -26V30M-22 -6h44M-34 10c4 20 20 30 34 30s30-10 34-30M-34 10l-8 6M34 10l8 6"/>
+  </g>
+
+  <text x="40" y="770" font-size="20" fill="#000" fill-opacity=".55">Harvard Mark II logbook, 1947</text>
+</svg>

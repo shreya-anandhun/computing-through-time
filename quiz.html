@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz &amp; About · Computing Through Time</title>
+  <meta name="description" content="A five-question quiz on the history of computing, plus who made this exhibit and where the facts came from.">
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <script>try{var t=localStorage.getItem('ctt-theme');if(t)document.documentElement.dataset.mode=t;}catch(e){}</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="progress" aria-hidden="true"></div>
+  <canvas id="confetti" aria-hidden="true"></canvas>
+
+  <header class="site-header">
+    <nav class="nav container" aria-label="Main">
+      <a class="brand" href="index.html">
+        <svg viewBox="0 0 34 34" aria-hidden="true"><rect x="2" y="2" width="30" height="30" rx="9" fill="currentColor"/><path d="M11 17h3l2-5 3 10 2-5h3" fill="none" stroke="var(--bg)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        Computing Through Time
+      </a>
+      <button class="icon-btn nav-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Open menu">
+        <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M3 5h14M3 10h14M3 15h14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      </button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="timeline.html">Timeline</a></li>
+        <li><a href="people.html">People</a></li>
+        <li><a href="quiz.html">Quiz &amp; About</a></li>
+      </ul>
+      <button class="icon-btn theme-toggle" aria-label="Switch to dark mode">
+        <svg class="sun" viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="4" fill="none" stroke="currentColor" stroke-width="2"/><path d="M10 1v2M10 17v2M1 10h2M17 10h2M3.6 3.6l1.4 1.4M15 15l1.4 1.4M3.6 16.4L5 15M15 5l1.4-1.4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        <svg class="moon" viewBox="0 0 20 20" aria-hidden="true"><path d="M16 12.5A7 7 0 0 1 7.5 4a7 7 0 1 0 8.5 8.5z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+      </button>
+    </nav>
+  </header>
+
+  <main id="main">
+    <!-- Quiz -->
+    <section class="section container" aria-labelledby="quiz-title">
+      <div class="section-head">
+      <div class="deco" aria-hidden="true"><span style="left:4%;top:10%"></span><span style="left:88%;top:18%"></span><span style="left:70%;top:70%"></span><span style="left:20%;top:80%"></span><span style="left:95%;top:55%"></span><span style="left:45%;top:5%"></span></div>
+        <h2 id="quiz-title">The quiz</h2>
+        <p>Five questions, all answered somewhere in the exhibit. You can press A, B, C or D on a keyboard.</p>
+      </div>
+      <div class="quiz">
+        <div class="quiz-progress" id="quiz-progress" aria-hidden="true"></div>
+        <div id="quiz-stage" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="section container" id="about" aria-labelledby="about-title">
+      <div class="section-head reveal">
+      <div class="deco" aria-hidden="true"><span style="left:4%;top:10%"></span><span style="left:88%;top:18%"></span><span style="left:70%;top:70%"></span><span style="left:20%;top:80%"></span><span style="left:95%;top:55%"></span><span style="left:45%;top:5%"></span></div>
+        <h2 id="about-title">About this exhibit</h2>
+        <p>Who made it, why it looks the way it does, and where the facts came from.</p>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-card reveal">
+          <h3>Curated by Shreya</h3>
+          <p>I’m a first-year B.Tech Computer Science student at SRM University, Ramapuram, in Chennai. I build websites to learn, and this is one of a series of practice projects where I take a detailed brief and try to deliver something a real museum could put online.</p>
+          <p>I’m part of CodeKrafters, my college’s tech club, in the Web3 domain, and I have built hackathon projects on blockchain evidence vaults and supply-chain risk prediction. The site you are reading was written in plain HTML, CSS and JavaScript, with no frameworks, with Claude as a pair programmer and me doing the briefing, decisions and research.</p>
+          <div class="social">
+            <a class="btn btn-ghost" href="https://github.com/shreya-anandhun" target="_blank" rel="noopener">GitHub</a>
+            <a class="btn btn-ghost" href="https://www.linkedin.com/in/shreya-as-091b33437/" target="_blank" rel="noopener">LinkedIn</a>
+          </div>
+        </div>
+
+        <div class="about-card reveal">
+          <h3>Why it looks like this</h3>
+          <p>I chose a clean, modern museum style because the brief asked for an exhibit rather than an encyclopedia page, and real galleries use white space so each object gets your full attention. Black, white and one deep red keep the exhibits themselves as the colour, the way a gallery wall stays plain so the art stands out. Rounded cards and a single typeface keep it friendly for teenagers without tipping into childish.</p>
+          <p class="small muted">Typeface: Google Sans Flex. Palette: black, white, red #7C0A02 (gold #FFC83D in dark mode), with two greys for surfaces and quiet text. Every drawing on the site is an original SVG.</p>
+        </div>
+      </div>
+
+      <div class="about-card reveal" style="margin-top: var(--s5)">
+        <h3>Sources</h3>
+        <p class="muted">Everything on the site is written in my own words; these are where I checked the facts.</p>
+        <ol class="sources">
+          <li>Computer History Museum, <em>Timeline of Computer History</em> (computerhistory.org/timeline)</li>
+          <li>Encyclopaedia Britannica, entries on ENIAC, transistor, integrated circuit, Alan Turing and Grace Hopper</li>
+          <li>CERN, <em>The birth of the Web</em>, and the first website at info.cern.ch</li>
+          <li>Intel, <em>The Story of the Intel 4004</em></li>
+          <li>The Nobel Prize, Physics 1956 (the transistor) and Physics 2000 (Jack Kilby)</li>
+          <li>UCLA Samueli School of Engineering, on the first ARPANET message (29 October 1969)</li>
+          <li>Smithsonian National Museum of American History, <em>Log Book With Computer Bug</em></li>
+          <li>Bletchley Park, biography of Alan Turing</li>
+          <li>US Naval History and Heritage Command, biography of Rear Admiral Grace Hopper</li>
+          <li>Apple Newsroom, iPhone announcement, 9 January 2007</li>
+          <li>Amazon Web Services, company history (S3 and EC2 launches, 2006)</li>
+          <li>Reuters, <em>ChatGPT sets record for fastest-growing user base</em>, February 2023</li>
+          <li>Vaswani et al., <em>Attention Is All You Need</em>, 2017</li>
+        </ol>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <p>Computing Through Time · an exhibit curated by Shreya, 2026</p>
+      <ul class="footer-links">
+        <li><a href="timeline.html">Timeline</a></li>
+        <li><a href="people.html">People</a></li>
+        <li><a href="quiz.html">Quiz</a></li>
+        <li><a href="quiz.html#about">About &amp; sources</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <button class="to-top icon-btn" aria-label="Back to top">
+    <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 16V4M5 9l5-5 5 5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  </button>
+
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/sparkles.js"></script>
+  <script src="js/quiz.js"></script>
+</body>
+</html>
